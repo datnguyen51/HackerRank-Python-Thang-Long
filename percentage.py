@@ -9,6 +9,7 @@ if __name__ == '__main__':
 
     arr_score_student_query = student_marks[query_name]
 
-    average_score = sum(arr_score_student_query)/len(arr_score_student_query)
+    average_score = float(sum(arr_score_student_query) /
+                          len(arr_score_student_query))
 
-    print(round(average_score, 2))
+    print("%.2f" % average_score)
